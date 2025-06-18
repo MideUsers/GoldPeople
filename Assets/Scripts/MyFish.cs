@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class MyFish : MonoBehaviour,IDragHandler
 {
-    
     public Transform CreatFishPoint;
     public GameObject gameOver;
     public GameObject gameWin;
@@ -14,7 +13,6 @@ public class MyFish : MonoBehaviour,IDragHandler
     public Text LevelText;
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("我是余");
         transform.position = Input.mousePosition;
     }
     private void OnTriggerEnter2D(Collider2D collision)
